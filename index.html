@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>CatPhotoApp</title>
+  </head>
+  <body>
+    <main>
+      <h1>CatPhotoApp</h1>
+      <section>
+        <h2>Cat Photos</h2>
+        <!-- TODO: Add link to cat photos -->
+        <p>
+          See more
+          <a target="_blank" href="https://www.pexels.com/search/cat/"
+            >cat photos</a
+          >
+          in our gallery.
+        </p>
+        <p>Sections:-</p>
+        <ul>
+          <li>
+            <a href="#list">Cat lists</a>
+          </li>
+          <li><a href="#quiz">Cat QnA</a></li>
+        </ul>
+        <a href="https://www.pexels.com/search/cat/"
+          ><img
+            src="./img/pexels-pixabay-290164.jpg"
+            alt="Orange tabby cat lying on floor"
+            height="400px"
+            width="600px"
+            title="orange tabby cat lying on floor"
+        /></a>
+      </section>
+      <section id="list">
+        <h2>Cat Lists</h2>
+        <h3>Things cats love:</h3>
+        <ul>
+          <li>Playtime with Toys</li>
+          <li>Cozy Napping Spots</li>
+          <li>Scratching Posts</li>
+          <li>Tasty Treats</li>
+          <li>Gentle Affection and Brushing</li>
+        </ul>
+        <figure>
+          <img src="./img/beef.jpg" alt="Tasty beef on a plate" />
+          <figcaption>Cats <em>love</em> beef.</figcaption>
+        </figure>
+        <h3>Top 3 things cats hate:</h3>
+        <ol>
+          <li>Water</li>
+          <li>Loud Noises</li>
+          <li>Forced Confinement</li>
+        </ol>
+        <figure>
+          <img src="./img/scaredcath20.jpg" alt="Cat Shocked after bath" />
+          <figcaption>Cats <strong>hate</strong> Water.</figcaption>
+        </figure>
+      </section>
+      <section id="quiz">
+        <h2>Cat QnA</h2>
+        <form action="https://freecatphotoapp.com/submit-cat-photo">
+          <fieldset>
+            <legend>What is a cat's usual response to catnip?</legend>
+            <label
+              ><input
+                id="indifference"
+                type="radio"
+                name="indifference-playfulness"
+                value="indifference"
+                checked
+              />
+              Indifference</label
+            >
+            <label
+              ><input
+                id="playfulness"
+                type="radio"
+                name="indifference-playfulness"
+                value="playfulness"
+              />
+              Playfulness</label
+            >
+          </fieldset>
+          <br />
+          <fieldset>
+            <legend>How do cats show affection?</legend>
+            <input
+              id="purring and kneading"
+              type="checkbox"
+              name="affection"
+              value="purring and kneading"
+              checked
+            />
+            <label for="purring and kneading">Purring and kneading</label>
+            <input
+              id="lazy"
+              type="checkbox"
+              name="personality"
+              value="wagging their tail"
+            />
+            <label for="wagging their tail">Wagging their tail</label>
+            <br /><input
+              id="energetic"
+              type="checkbox"
+              name="personality"
+              value="energetic"
+            />
+            <label for="energetic">Energetic Movement</label>
+          </fieldset>
+          <input
+            type="text"
+            name="catphotourl"
+            placeholder="cat photo URL"
+            required
+          />
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <br />
+      <br />
+      <br />
+      <a href="#">Back To Top</a>
+      <p>No Copyright / Shivam "Tency" Verma</p>
+    </footer>
+  </body>
+</html>
